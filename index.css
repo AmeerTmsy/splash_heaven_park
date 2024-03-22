@@ -1,0 +1,205 @@
+
+
+p,
+a,
+span,
+body{
+    font-family: "Roboto Serif", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "Mulish", sans-serif;
+}
+
+header a{
+    font-family: "Mulish", sans-serif;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-image: url(https://rb.gy/tmvt9i);
+    background-size: cover;
+    background-position: bottom;
+    aspect-ratio: 5/2;
+}
+.card{
+    background-color: lightgray !important;
+    transition: background-color .3s ease-in-out !important;
+}
+.list-group li{
+    background-color: lightgray;
+    transition: background-color .4s ease;
+}
+.card:hover,
+.card:hover .list-group li{
+    background-color: #afafaf !important;
+}
+/* ------------  form styling start  ------------- */
+.from-container{
+    height: 520px;
+    width: 100%;
+    padding: 1.5rem 0 5rem;
+    margin: 3rem 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.form{
+}
+.input-row{
+    padding: 2.5rem 10em;
+}
+.input-row:nth-of-type(1){
+    padding-top: 0;
+}
+.textArea{
+    position: relative;
+    margin: 35px 0;
+}
+.textArea .input,
+.textArea textarea{
+    position: absolute;
+    width: 100%;
+    line-height: 50px;
+    padding: 0 30px;
+    border: 2px solid lightslategray;
+    border-radius: .4rem;
+}
+.textArea label{
+    position: absolute;
+    top: 10px;
+    padding: 0.3rem 30px;
+    transition: all .5s ease-in-out;
+    background: transparent;
+}
+
+input:focus + label,
+input:valid + label,
+textarea:focus + label,
+textarea:valid + label{
+    background-color: white;
+    padding: 0 10px;
+    transform: translate(0px, -21px) scale(0.88);
+    z-index: 1111;
+}
+
+#email:not(:placeholder-shown) + label, 
+#email:focus + label{
+    background-color: white;
+    padding: 0 10px;
+    transform: translate(0px, -21px) scale(0.88);
+    z-index: 1111;
+}
+
+/* --------------  form styling end  ------------- */
+/* ------------------  footer  ------------------ */
+
+.footer-messager{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 1.5rem 0;
+}
+.footer-messager p{
+    font-size: 1em;
+}
+.footer-links ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+.footer-links li{
+    padding: .4rem 0;
+}
+
+.footer-links ul a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-social ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 3px;
+    font-size: 1.7rem;
+}
+.footer-social ul a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ----------- media quriy------- */
+
+@media (max-width: 992px) {
+
+    .footer-messager,
+    .footer-messager p{
+        align-items: center;
+        text-align: center;
+    }
+    .footer-social ul{
+        flex-direction: row;
+        gap: 1rem;
+        padding-left: 0;
+    }
+
+    #facebook{
+        color: #3838ff;
+    }
+    #twitter{
+        color: #4da4ec ;
+    }
+    #instagram{
+        color: #ff004c
+    }
+    #youtube{
+        color: red;
+    }
+
+    .footer-links ul{
+        align-items: flex-end;
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .footer-links li{
+        padding: 0 .5rem;
+        border-right: 1px solid white;
+    }
+    .footer-links li:last-child{
+        border-right: none;
+    }
+    .input-row{
+        padding: 3rem 1em;
+    }
+}
+
+/* @media (max-width: 576px) {
+    .input-row{
+        padding: 3rem 1em;
+    }
+    
+} */
